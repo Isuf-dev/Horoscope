@@ -1,13 +1,15 @@
 package com.example.horoscope;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.horoscope.utils.Alert;
 
 public class App extends AppCompatActivity {
 
@@ -27,25 +29,33 @@ public class App extends AppCompatActivity {
 //     TODO set after the button is clicked   setContentView(R.layout.activity_main);
 
         setContentView(R.layout.activity_startup);
+        Activity currentActivity = this;
 
         startupNextBtn = findViewById(R.id.startup_next_btn);
 
         startupNextBtn.setOnClickListener(new View.OnClickListener() {
-            @SuppressLint("MissingInflatedId")
+            @SuppressLint({"MissingInflatedId", "UseCompatLoadingForDrawables"})
             @Override
             public void onClick(View v) {
                 username = findViewById(R.id.editTxtName);
                 surname = findViewById(R.id.editTxtSurname);
                 userDescription = findViewById(R.id.editTxtDescription);
-                System.setProperty("username",username.toString());
-                System.setProperty("surname",surname.toString());
-                System.setProperty("userDescription",userDescription.toString());
-                setContentView(R.layout.activity_zodiac_sign);
+
+                if (username.getText().toString().trim().isEmpty() || username.getText().toString().trim().isBlank() ||
+                        surname.getText().toString().trim().isEmpty() || surname.getText().toString().trim().isBlank() ||
+                        userDescription.getText().toString().trim().isEmpty() || userDescription.getText().toString().trim().isBlank()) {
+                    Alert customAlert = new Alert(currentActivity);
+                    customAlert.showAlert("Warning",
+                            "You Have to fill all the fields",
+                            getDrawable(R.drawable.icon_warning));
+                } else {
+                    System.setProperty("username", username.toString());
+                    System.setProperty("surname", surname.toString());
+                    System.setProperty("userDescription", userDescription.toString());
+                    setContentView(R.layout.activity_zodiac_sign);
+                }
             }
         });
-
-
-
 
     }
 }
