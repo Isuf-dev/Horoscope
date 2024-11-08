@@ -31,7 +31,7 @@ public class App extends AppCompatActivity {
         setContentView(R.layout.activity_startup);
         Activity currentActivity = this;
 
-        startupNextBtn = findViewById(R.id.startup_next_btn);
+        startupNextBtn = findViewById(R.id.preferences_next_btn);
 
         startupNextBtn.setOnClickListener(new View.OnClickListener() {
             @SuppressLint({"MissingInflatedId", "UseCompatLoadingForDrawables"})
