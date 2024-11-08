@@ -1,6 +1,495 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper_2">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/medievalsharp_bold"
+        android:text="@string/zodiac_sign_message"
+        android:textColor="#CCFFFFFF"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_zodiac_sign_h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="85dp" />
+    <!--1-->
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/constraint_layout_aries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_zodiac_sign_container"
+        android:padding="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/constraint_layout_taurus"
+        app:layout_constraintTop_toBottomOf="@id/guideline_zodiac_sign_h"
+        app:layout_constraintBottom_toTopOf="@id/constraint_layout_cancer"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/image_aries"
+       android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/background_zodiac_sign_clicked"
+            android:scaleType="centerCrop"
+            android:src="@drawable/zodiac_sign_aries" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="16dp"
+            android:text="@string/aries"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_aries"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#B3FFFFFF"
+            android:fontFamily="@font/medievalsharp_bold"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--2-->
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/constraint_layout_taurus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_zodiac_sign_container"
+        android:padding="8dp"
+        app:layout_constraintLeft_toRightOf="@id/constraint_layout_aries"
+        app:layout_constraintRight_toLeftOf="@id/constraint_layout_gemini"
+        app:layout_constraintTop_toBottomOf="@id/guideline_zodiac_sign_h"
+        app:layout_constraintBottom_toTopOf="@id/constraint_layout_leo"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/image_taurus"
+       android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/background_zodiac_sign_default"
+            android:scaleType="centerCrop"
+            android:src="@drawable/zodiac_sign_taurus" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="16dp"
+            android:text="@string/taurus"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_taurus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#B3FFFFFF"
+            android:fontFamily="@font/medievalsharp_bold"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--3-->
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/constraint_layout_gemini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_zodiac_sign_container"
+        android:padding="8dp"
+        app:layout_constraintLeft_toRightOf="@id/constraint_layout_taurus"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline_zodiac_sign_h"
+        app:layout_constraintBottom_toTopOf="@id/constraint_layout_virgo"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/image_gemini"
+       android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/background_zodiac_sign_default"
+            android:scaleType="centerCrop"
+            android:src="@drawable/zodiac_sign_gemini" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="16dp"
+            android:text="@string/gemini"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_gemini"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#B3FFFFFF"
+            android:fontFamily="@font/medievalsharp_bold"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--4-->
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/constraint_layout_cancer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_zodiac_sign_container"
+        android:padding="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/constraint_layout_leo"
+        app:layout_constraintTop_toBottomOf="@id/constraint_layout_aries"
+        app:layout_constraintBottom_toTopOf="@id/constraint_layout_libra"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/image_cancer"
+       android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/background_zodiac_sign_default"
+            android:scaleType="centerCrop"
+            android:src="@drawable/zodiac_sign_cancer" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="16dp"
+            android:text="@string/cancer"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_cancer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#B3FFFFFF"
+            android:fontFamily="@font/medievalsharp_bold"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--5-->
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/constraint_layout_leo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_zodiac_sign_container"
+        android:padding="8dp"
+        app:layout_constraintLeft_toRightOf="@id/constraint_layout_cancer"
+        app:layout_constraintRight_toLeftOf="@id/constraint_layout_virgo"
+        app:layout_constraintTop_toBottomOf="@id/constraint_layout_taurus"
+        app:layout_constraintBottom_toTopOf="@id/constraint_layout_scorpio"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/image_leo"
+       android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/background_zodiac_sign_default"
+            android:scaleType="centerCrop"
+            android:src="@drawable/zodiac_sign_leo" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="16dp"
+            android:text="@string/leo"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_leo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#B3FFFFFF"
+            android:fontFamily="@font/medievalsharp_bold"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--6-->
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/constraint_layout_virgo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_zodiac_sign_container"
+        android:padding="8dp"
+        app:layout_constraintLeft_toRightOf="@id/constraint_layout_leo"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraint_layout_gemini"
+        app:layout_constraintBottom_toTopOf="@id/constraint_layout_sagittarius"
+        tools:ignore="MissingConstraints"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#B3FFFFFF"
+        android:fontFamily="@font/medievalsharp_bold">
+
+        <ImageView
+            android:id="@+id/image_virgo"
+       android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/background_zodiac_sign_default"
+            android:scaleType="centerCrop"
+            android:src="@drawable/zodiac_sign_virgo" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="16dp"
+            android:text="@string/virgo"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_virgo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#B3FFFFFF"
+            android:fontFamily="@font/medievalsharp_bold"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--7-->
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/constraint_layout_libra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_zodiac_sign_container"
+        android:padding="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/constraint_layout_scorpio"
+        app:layout_constraintTop_toBottomOf="@id/constraint_layout_cancer"
+        app:layout_constraintBottom_toTopOf="@id/constraint_layout_capricorn"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/image_libra"
+       android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/background_zodiac_sign_default"
+            android:scaleType="centerCrop"
+            android:src="@drawable/zodiac_sign_libra" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="16dp"
+            android:text="@string/libra"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_libra"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#B3FFFFFF"
+            android:fontFamily="@font/medievalsharp_bold"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--8-->
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/constraint_layout_scorpio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_zodiac_sign_container"
+        android:padding="8dp"
+        app:layout_constraintLeft_toRightOf="@id/constraint_layout_libra"
+        app:layout_constraintRight_toLeftOf="@id/constraint_layout_sagittarius"
+        app:layout_constraintTop_toBottomOf="@id/constraint_layout_leo"
+        app:layout_constraintBottom_toTopOf="@id/constraint_layout_aquarius"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/image_scorpio"
+       android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/background_zodiac_sign_default"
+            android:scaleType="centerCrop"
+            android:src="@drawable/zodiac_sign_scorpio" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="16dp"
+            android:text="@string/scorpio"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_scorpio"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#B3FFFFFF"
+            android:fontFamily="@font/medievalsharp_bold"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--9-->
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/constraint_layout_sagittarius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_zodiac_sign_container"
+        android:padding="8dp"
+        app:layout_constraintLeft_toRightOf="@id/constraint_layout_scorpio"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraint_layout_virgo"
+        app:layout_constraintBottom_toTopOf="@id/constraint_layout_pisces"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/image_sagittarius"
+       android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/background_zodiac_sign_default"
+            android:scaleType="centerCrop"
+            android:src="@drawable/zodiac_sign_sagittarius" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="16dp"
+            android:text="@string/sagittarius"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_sagittarius"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#B3FFFFFF"
+            android:fontFamily="@font/medievalsharp_bold"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--10-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_layout_capricorn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_zodiac_sign_container"
+        android:padding="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/constraint_layout_aquarius"
+        app:layout_constraintTop_toBottomOf="@id/constraint_layout_libra"
+        app:layout_constraintBottom_toTopOf="@id/guideline_h"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/image_capricorn"
+       android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/background_zodiac_sign_default"
+            android:scaleType="centerCrop"
+            android:src="@drawable/zodiac_sign_capricorn" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="80dp"
+            android:layout_height="16dp"
+            android:text="@string/capricorn"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_capricorn"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#B3FFFFFF"
+            android:fontFamily="@font/medievalsharp_bold"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--11-->
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/constraint_layout_aquarius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_zodiac_sign_container"
+        android:padding="8dp"
+        app:layout_constraintLeft_toRightOf="@id/constraint_layout_capricorn"
+        app:layout_constraintRight_toLeftOf="@id/constraint_layout_pisces"
+        app:layout_constraintTop_toBottomOf="@id/constraint_layout_scorpio"
+        app:layout_constraintBottom_toTopOf="@id/guideline_h"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/image_aquarius"
+       android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/background_zodiac_sign_default"
+            android:scaleType="centerCrop"
+            android:src="@drawable/zodiac_sign_aquarius" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="16dp"
+            android:text="@string/aquarius"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_aquarius"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#B3FFFFFF"
+            android:fontFamily="@font/medievalsharp_bold"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--12-->
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/constraint_layout_pisces"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_zodiac_sign_container"
+        android:padding="8dp"
+        app:layout_constraintLeft_toRightOf="@id/constraint_layout_aquarius"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraint_layout_sagittarius"
+        app:layout_constraintBottom_toTopOf="@id/guideline_h"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/image_pisces"
+       android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/background_zodiac_sign_default"
+            android:scaleType="centerCrop"
+            android:src="@drawable/zodiac_sign_pisces" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="16dp"
+            android:text="@string/pisces"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_pisces"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#B3FFFFFF"
+            android:fontFamily="@font/medievalsharp_bold"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/startup_back"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/background_round_button"
+        android:text="@string/back"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline_v"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline_h" />
+
+    <Button
+        android:id="@+id/zodiac_next_btn"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:background="@drawable/background_round_button"
+        android:text="@string/next"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v"
+        app:layout_constraintTop_toTopOf="@+id/guideline_h" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="256dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="628dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

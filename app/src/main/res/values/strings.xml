@@ -5,6 +5,7 @@
     <string name="surname">Surname…</string>
     <string name="name">Name…</string>
     <string name="description">Description…</string>
+    <string name="zodiac_sign_message">Pick your zodiac sign</string>
     <string name="next">Next</string>
     <string name="back">Back</string>
     <string name="preference1">Career &amp; Professional Growth</string>
@@ -16,14 +17,17 @@
     <string name="preference7">Education &amp; Learning Opportunities</string>
     <string name="preference8">Travel &amp; Adventure</string>
     <string name="preference9">Creativity &amp; Hobbies</string>
+    <string name="aquarius">Aquarius</string>
+    <string name="aries">Aries</string>
+    <string name="cancer">Cancer</string>
+    <string name="capricorn">Capricorn</string>
+    <string name="gemini">Gemini</string>
+    <string name="leo">Leo</string>
+    <string name="libra">Libra</string>
+    <string name="pisces">Pisces</string>
+    <string name="sagittarius">Sagittarius</string>
+    <string name="scorpio">Scorpio</string>
+    <string name="taurus">Taurus</string>
+    <string name="virgo">Virgo</string>
 </resources>
-
-    <!--    "",-->
-    <!--    "",-->
-    <!--    "",-->
-    <!--    "",-->
-    <!--    "",-->
-    <!--    "",-->
-    <!--    "",-->
-    <!--    "");-->
 
