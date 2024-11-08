@@ -1,6 +1,203 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper_2"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/medievalsharp_bold"
+        android:text="@string/preferences_message"
+        android:textColor="#CCFFFFFF"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <CheckedTextView
+        android:id="@+id/preferenceText1"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/background_rounded_user_input"
+        android:padding="5dp"
+        android:text="@string/preference1"
+        android:textAlignment="center"
+        android:textColor="#CCFFFFFF"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/preferenceText7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckedTextView
+        android:id="@+id/preferenceText2"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/background_rounded_user_input"
+        android:padding="5dp"
+        android:text="@string/preference2"
+        android:textAlignment="center"
+        android:textColor="#CCFFFFFF"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/preferenceText8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckedTextView
+        android:id="@+id/preferenceText3"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/background_rounded_user_input"
+        android:padding="5dp"
+        android:text="@string/preference3"
+        android:textAlignment="center"
+        android:textColor="#CCFFFFFF"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/preferenceText4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckedTextView
+        android:id="@+id/preferenceText4"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/background_rounded_user_input"
+        android:padding="5dp"
+        android:text="@string/preference4"
+        android:textAlignment="center"
+        android:textColor="#CCFFFFFF"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/preferenceText9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckedTextView
+        android:id="@+id/preferenceText5"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="130dp"
+        android:background="@drawable/background_rounded_user_input"
+        android:padding="5dp"
+        android:text="@string/preference5"
+        android:textAlignment="center"
+        android:textColor="#CCFFFFFF"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startup_next_btn"
+        app:layout_constraintVertical_bias="0.981" />
+
+    <CheckedTextView
+        android:id="@+id/preferenceText6"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/background_rounded_user_input"
+        android:padding="5dp"
+        android:text="@string/preference6"
+        android:textAlignment="center"
+        android:textColor="#CCFFFFFF"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/preferenceText1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckedTextView
+        android:id="@+id/preferenceText7"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/background_rounded_user_input"
+        android:padding="5dp"
+        android:text="@string/preference7"
+        android:textAlignment="center"
+        android:textColor="#CCFFFFFF"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/preferenceText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckedTextView
+        android:id="@+id/preferenceText8"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/background_rounded_user_input"
+        android:padding="5dp"
+        android:text="@string/preference8"
+        android:textAlignment="center"
+        android:textColor="#CCFFFFFF"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/preferenceText3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckedTextView
+        android:id="@+id/preferenceText9"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/background_rounded_user_input"
+        android:padding="5dp"
+        android:text="@string/preference9"
+        android:textAlignment="center"
+        android:textColor="#CCFFFFFF"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/preferenceText5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/startup_next_btn2"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="264dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/background_round_button"
+        android:text="@string/back"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/startup_next_btn"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/background_round_button"
+        android:text="@string/next"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+

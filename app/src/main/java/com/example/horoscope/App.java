@@ -52,7 +52,7 @@ public class App extends AppCompatActivity {
                     System.setProperty("username", username.toString());
                     System.setProperty("surname", surname.toString());
                     System.setProperty("userDescription", userDescription.toString());
-                    setContentView(R.layout.activity_zodiac_sign);
+                    setContentView(R.layout.activity_preferences);
                 }
             }
         });
