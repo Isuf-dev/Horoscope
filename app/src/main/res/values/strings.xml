@@ -1,8 +1,29 @@
 <resources>
     <string name="app_name">Horoscope</string>
     <string name="startup_message">Fill in your data</string>
+    <string name="preferences_message">Choose your preferences</string>
     <string name="surname">Surname…</string>
     <string name="name">Name…</string>
     <string name="description">Description…</string>
     <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="preference1">Career &amp; Professional Growth</string>
+    <string name="preference2">Health &amp; Wellness</string>
+    <string name="preference3">Finance &amp; Wealth</string>
+    <string name="preference4">Personal Development &amp; Spiritual Growth</string>
+    <string name="preference5">Family &amp; Home Life</string>
+    <string name="preference6">Friendships &amp; Social Life</string>
+    <string name="preference7">Education &amp; Learning Opportunities</string>
+    <string name="preference8">Travel &amp; Adventure</string>
+    <string name="preference9">Creativity &amp; Hobbies</string>
 </resources>
+
+    <!--    "",-->
+    <!--    "",-->
+    <!--    "",-->
+    <!--    "",-->
+    <!--    "",-->
+    <!--    "",-->
+    <!--    "",-->
+    <!--    "");-->
+
